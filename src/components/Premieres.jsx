@@ -13,7 +13,7 @@ function Premieres() {
     }, [])
 
     useEffect(() => {
-        const socket = new WebSocket('ws://' + 'localhost:8081' + '/retrieve/' + 'xxx');
+        const socket = new WebSocket('ws://' + 'localhost:8080' + '/retrieve/' + 'xyz');
         socket.onmessage = function (m) {
             const data = JSON.parse(m.data);
             console.log("Mensaje: " + data.type);
@@ -26,13 +26,13 @@ function Premieres() {
     return (
         <div>
             <br/>            
-            <h1 className="text-center">Estrenos</h1>
+            <h1 className="text-center shadow-lg mb-3">Estrenos</h1>
             {premieres && premieres.map(premier => {
                 return (
                     <div key={premier._id}>
                         <Accordion defaultActiveKey='1' flush>
                             <Accordion.Item eventKey='0'><br/>
-                                <Accordion.Header>{premier.name}</Accordion.Header>
+                                <Accordion.Header className="shadow-lg">{premier.name}</Accordion.Header>
                                 <Accordion.Body>
                                     {premier.pelicula &&
                                         Object.keys(premier.pelicula).map((key) => {

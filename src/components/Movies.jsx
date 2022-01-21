@@ -6,7 +6,7 @@ function Movies({ pelicula }) {
                 <h3 class="card-header">{pelicula.titulo}</h3>
                 <div className="card-body">
                     {pelicula.imagenURL != null ? 
-                        <img src={pelicula.imagenURL}/> :
+                        <img width={"185px"} height={"278px"} src={pelicula.imagenURL}/> :
                         <img width={"185px"} height={"278px"} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFafFREAsfIkQNeZCFLgHmIpw5as8oRm6N1tSlAPB-4pcr9DLZoe__8W3jWCD09G3cIas&usqp=CAU"/>
                     }                    
                 </div>

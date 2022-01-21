@@ -6,7 +6,7 @@ export const getPremieres = () => (dispatch) => {
 
     const options = {
         method: 'GET',
-        url: 'http://localhost:8081/api/estreno'
+        url: 'http://localhost:8080/api/estreno'
     }
 
     axios.request(options).then(function (response) {
