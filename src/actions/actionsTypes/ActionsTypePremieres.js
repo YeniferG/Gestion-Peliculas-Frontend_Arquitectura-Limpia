@@ -1,0 +1,8 @@
+const actionsTypesPremieres = {
+    LOADING_SUCCESS_PREMIERES: 'LOADING_SUCCESS_CATALOGS',
+    LOAD_SUCCESS_PREMIERES: 'LOAD_SUCCESS_CATALOGS',
+    LOAD_FAILURE_PREMIERES: 'LOAD_FAILURE_CATALOGS',
+    SOFKA_ESTRENO_PELICULAAGREGADA: 'sofka.estreno.peliculaagregada'
+}
+
+export default actionsTypesPremieres
